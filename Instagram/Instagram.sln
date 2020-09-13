@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instagram.Application", "In
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instagram.Domin", "Instagram.Domin", "{9AC24E56-61B3-49C2-B98A-39B709CE2890}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instargram.Infra.Data", "Instargram.Infra.Data", "{3164F85D-6E2B-4F9E-AA45-B964EB2AF039}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instagram.Infra.Data", "Instagram.Infra.Data", "{3164F85D-6E2B-4F9E-AA45-B964EB2AF039}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instagram.Infra.IoC", "Instagram.Infra.IoC", "{020AD11F-2E70-4DB1-8588-EF1FA7F96B6E}"
 EndProject
