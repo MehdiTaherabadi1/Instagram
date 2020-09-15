@@ -18,4 +18,8 @@
     <ProjectReference Include="..\CleanArch.Domin\CleanArch.Domin.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+  </ItemGroup>
+
 </Project>
