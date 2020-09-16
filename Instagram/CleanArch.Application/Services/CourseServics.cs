@@ -1,6 +1,9 @@
-﻿using CleanArch.Application.Interfaces;
+﻿using System.Collections.Generic;
+using System.Linq;
+using CleanArch.Application.Interfaces;
 using CleanArch.Application.ViewModel;
 using CleanArch.Domin.Interfaces;
+using CleanArch.Domin.Modals;
 
 namespace CleanArch.Application.Services
 {
@@ -19,6 +22,11 @@ namespace CleanArch.Application.Services
             {
                 Courses = courseRepository.GetCourses()
             };
+        }
+
+        public  Course GetCourseForShow(int courseId)
+        {
+            return courseRepository.GetAllCourse().SingleOrDefault(u => u.CourseId == courseId);
         }
     }
 }

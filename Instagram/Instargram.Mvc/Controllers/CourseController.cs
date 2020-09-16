@@ -18,5 +18,13 @@ namespace Instargram.Mvc.Controllers
             CourseViewModel model =  courseServices.GetCourse();
             return View(model);
         }
+
+        [Route("ShowCourse/{id}")]
+        public IActionResult ShowCourse(int id)
+        {
+            var course = courseServices.GetCourseForShow(id);
+
+            return View(course);
+        }
     }
 }

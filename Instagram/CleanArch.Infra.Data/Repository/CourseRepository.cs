@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using CleanArch.Domin.Interfaces;
 using CleanArch.Domin.Modals;
 using CleanArch.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArch.Infra.Data.Repository
 {
@@ -21,6 +24,11 @@ namespace CleanArch.Infra.Data.Repository
         public IEnumerable<Course> GetCourses()
         {
             return context.Courses;
+        }
+
+        public IQueryable<Course> GetAllCourse()
+        {
+            return context.Courses.AsQueryable();
         }
     }
 }
